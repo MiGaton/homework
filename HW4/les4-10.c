@@ -1,6 +1,4 @@
 
-
-
 #include <stdio.h>
 
 int main(int argc, char **argv)
@@ -32,7 +30,6 @@ int main(int argc, char **argv)
                 printf("summer");
     else
        printf("autumn");
-
 
     return 0;
 }
