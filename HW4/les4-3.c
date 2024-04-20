@@ -1,21 +1,19 @@
 
 
-
 #include <inttypes.h>
 
 #include <stdio.h>
 
 int main(int argc, char **argv)
 {
-    unsigned int x;
-    unsigned int a,b,c;
-    scanf("%u", &x);
-    a=x&0xF;
-    b=(x>>4)&0xF;
-    c=(x>>8);
-    a=a>b?a:b;
-    a=a>c?a:c;
-    printf("%u", a);
+    int a,b,c,max,x;
+    scanf("%d", &x);
+    a=x%10;
+    b=(x/10)%10;
+    c=(x/100)%10;
+    max=a>b?a:b;
+    max=a>c?a:c;
+    printf("%d", max);
     return 0;
 
 }

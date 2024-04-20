@@ -1,34 +1,17 @@
 
 
-
 #include <stdio.h>
 
 int main(int argc, char **argv)
 {
-    /*int a;
-    scanf("%d",&a);
-    switch(a)
-    {
-       case 1:
-          printf("winter");
-          break;
-       case 2:
-          printf("spring");
-          break;
-       case 3:
-          printf("summer");
-          break;
-       case 4:
-          printf("autumn");
-          break;
-    }*/
+
     int a;
     scanf("%d",&a);
-    if(a==1)
+    if(((a>=1)&&(a<=2))||a==12)
        printf("winter");
-       else if(a==2)
+       else if((a>=3)&&(a<=5))
           printf("spring");
-             else if(a==3)
+             else if((a>=6)&&(a<=8))
                 printf("summer");
     else
        printf("autumn");
