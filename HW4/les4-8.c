@@ -1,4 +1,5 @@
 
+
 #include <inttypes.h>
 
 #include <stdio.h>
@@ -6,7 +7,8 @@
 int main(int argc, char **argv)
 {
 
-    int a,b,c,d,e,min;
+    int a,b,c,d,e,min
+    ;
     scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
     min=a<b?a:b;
     min=min<c?min:c;
